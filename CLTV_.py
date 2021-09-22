@@ -119,8 +119,8 @@ cltv_df["cltv_6_month"] = ggf.customer_lifetime_value(bgf,
                                    cltv_df['recency'],
                                    cltv_df['T'],
                                    cltv_df['monetary'],
-                                   time=6,  # 3 aylık
-                                   freq="W",  # T'nin frekans bilgisi.
+                                   time=6,  
+                                   freq="W", 
                                    discount_rate=0.01)
 # Calculation of CLTV with 1-month BG-NBD and GG model #
 cltv_df["cltv_1_month"] = ggf.customer_lifetime_value(bgf,
@@ -128,8 +128,8 @@ cltv_df["cltv_1_month"] = ggf.customer_lifetime_value(bgf,
                                    cltv_df['recency'],
                                    cltv_df['T'],
                                    cltv_df['monetary'],
-                                   time=1,  # 3 aylık
-                                   freq="W",  # T'nin frekans bilgisi.
+                                   time=1, 
+                                   freq="W",  
                                    discount_rate=0.01)
 # Calculation of CLTV with 12-month BG-NBD and GG model #
 cltv_df["cltv_12_month"] = ggf.customer_lifetime_value(bgf,
@@ -137,8 +137,8 @@ cltv_df["cltv_12_month"] = ggf.customer_lifetime_value(bgf,
                                    cltv_df['recency'],
                                    cltv_df['T'],
                                    cltv_df['monetary'],
-                                   time=12,  # 3 aylık
-                                   freq="W",  # T'nin frekans bilgisi.
+                                   time=12,  
+                                   freq="W",  
                                    discount_rate=0.01)
 
 cltv_df.head(10)
